@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background: rgba(80, 10, 255, 0.1)
+}
+
+.playing-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+#current-player {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.field {
+    width: 150px;
+    height: auto;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    color: rgb(50, 50, 50);
+    user-select: none;
+}
